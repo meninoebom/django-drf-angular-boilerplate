@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from jsframework import urls as jsf_urls
 
 urlpatterns = [
+    url(r'^', include(jsf_urls)),
     url(r'^admin/', include(admin.site.urls)),
 ]
