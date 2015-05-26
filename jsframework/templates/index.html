@@ -1,5 +1,20 @@
-{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DRF Boilerplate</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'jsframework/css/main.css'%}">
+    </head>
+    <body ng-app="App">
+        <div ui-view></div>
+        <script src="{% static 'jsframework/js/bower_components/angular/angular.js' %}"></script>
+        <script src="{% static 'jsframework/js/bower_components/angular-ui-router/release/angular-ui-router.js' %}"></script>
 
-{% block 'main_content' %}
-    Foo Bar!
-{% endblock %}
+        <!-- Create App-->
+        <script src="{% static 'jsframework/js/index.js' %}"></script>
+
+        <!-- Controllers-->
+        <script src="{% static 'jsframework/js/controllers/mainController.js' %}"></script>
+    </body> 
+</html>
