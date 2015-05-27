@@ -2,7 +2,7 @@
 .idea/
 
 #Django
-static/
+/static/
 *.pyc
 
 #NPM and Bower
