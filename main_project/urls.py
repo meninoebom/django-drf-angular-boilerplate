@@ -19,5 +19,6 @@ from client import urls as jsf_urls
 
 urlpatterns = [
     url(r'^', include(jsf_urls)),
+    url(r'^api/', include(server.api.urls))
     url(r'^admin/', include(admin.site.urls)),
 ]

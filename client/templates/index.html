@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DRF Boilerplate</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{% static 'client/css/main.css'%}">
+    </head>
+    <body ng-app="App">
+        <div ui-view></div>
+        <script src="{% static 'client/js/bower_components/angular/angular.js' %}"></script>
+        <script src="{% static 'client/js/bower_components/angular-ui-router/release/angular-ui-router.js' %}"></script>
+
+        <!-- Create App-->
+        <script src="{% static 'client/js/index.js' %}"></script>
+
+        <!-- Controllers-->
+        <script src="{% static 'client/js/controllers/mainController.js' %}"></script>
+    </body> 
+</html>
