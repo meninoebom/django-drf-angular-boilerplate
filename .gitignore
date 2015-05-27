@@ -3,6 +3,7 @@
 
 #Django
 static/
+*.pyc
 
 #NPM and Bower
 bower_components/
