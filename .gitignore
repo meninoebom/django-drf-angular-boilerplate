@@ -6,7 +6,8 @@
 *.pyc
 
 #NPM and Bower
-bower_components/
+# Have to commit bower_components for deploytment to production
+#bower_components/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
