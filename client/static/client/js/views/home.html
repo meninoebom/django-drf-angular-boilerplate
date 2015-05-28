@@ -1,1 +1,4 @@
-<div ng-controller="MainController as MC">{{MC.foo}}</div>
+<div ng-controller="MainController as MC">
+    <input type="text" placeholder="Your Name" ng-model="MC.name">
+    Hello, {{MC.name}}!
+</div>
